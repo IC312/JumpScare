@@ -78,8 +78,10 @@ h1 {
   color: red;
   font-size: 40px;
   font-weight: bold;
-  z-index: 1001; /* Đảm bảo nằm trên ảnh */
+  z-index: 1001;
   text-shadow: 2px 2px black;
   text-align: center;
-  white-space: nowrap;
+  max-width: 80vw; /* Giới hạn chiều rộng để tự xuống dòng */
+  white-space: normal; /* Cho phép xuống dòng */
+  padding: 0 20px; /* Chống dính sát viền màn hình */
 }
