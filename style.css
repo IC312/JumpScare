@@ -1,16 +1,83 @@
-#sfondo {position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;}
+/* Gradient nền và căn giữa nội dung */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff4e50, #1fddff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+/* Ẩn hình nền cũ nếu có */
+#sfondo {
+  display: none;
+}
+
+/* Tiêu đề to, màu trắng */
 h1 {
-	color: #ffffff;
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 30px;
 }
 
-html {
-	text-align: center;
-	background-color: black;
+/* Container chứa nội dung chính */
+#question-box {
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
-img {
-	width:100%;
-	height:100%;
-	z-index:-1;
+/* Nhóm nút */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Nút Có/Không */
+.btn-group button {
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+/* Hover nút */
+.btn-group button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* Ảnh jumpscare */
+#jumpscare img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Chữ trong jumpscare */
+#message {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 1000;
+  text-shadow: 2px 2px black;
 }
