@@ -78,7 +78,8 @@ h1 {
   color: red;
   font-size: 40px;
   font-weight: bold;
-  z-index: 1000;
+  z-index: 1001; /* Đảm bảo nằm trên ảnh */
   text-shadow: 2px 2px black;
   text-align: center;
+  white-space: nowrap;
 }
