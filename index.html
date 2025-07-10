@@ -1,34 +1,27 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Redirect to DarkNet - PRIVATE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!--[if IE ]>
-    <style type="text/css">
-      html {overflow-y:hidden;}
-      body {overflow-y:auto;}
-      #sfondo {position:absolute; z-index:-1;}
-    </style>
-    <![endif]-->
-  </head>
-  <body>
-    <script src="funzioni.js"></script>
+<head>
+  <title>Hỏi Ngu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script src="funzioni.js"></script>
 
-    <!-- Jumpscare hiển thị ngay -->
-    <div id="jumpscare" style="display: none;">
-      <audio id="audio">
-        <source src="scare.mp3" type="audio/mpeg">
-      </audio>
-      <img src="jamp.gif">
-      <p id="message"></p>
+  <div id="question-box">
+    <h1>Bạn có ngu không?</h1>
+    <div class="btn-group">
+      <button onclick="attiva()">Có</button>
+      <button onclick="alert('Chúc mừng bạn!')">Không</button>
     </div>
+  </div>
 
-    <!-- Script tự kích hoạt jumpscare khi mở trang -->
-    <script>
-      window.onload = function () {
-        go_full_screen(); // Bắt buộc phải do người dùng thao tác thì mới fullscreen được ở hầu hết trình duyệt
-        attiva();
-      };
-    </script>
-  </body>
+  <div id="jumpscare" style="display: none;">
+    <audio id="audio">
+      <source src="scare.mp3" type="audio/mpeg">
+    </audio>
+    <img src="jamp.gif">
+    <p id="message"></p>
+  </div>
+</body>
 </html>
