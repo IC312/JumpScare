@@ -36,6 +36,6 @@ function visual() {
 
   var msg = document.getElementById("message");
   if (msg !== null) {
-    msg.innerHTML = "<h1><strong><em>CHÓ NGU VCL</em></strong></h1>";
+msg.textContent = "CHÓ NGU VCL";
   }
 }
