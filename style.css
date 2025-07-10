@@ -70,14 +70,15 @@ h1 {
   z-index: 999;
 }
 
-/* Chữ trong jumpscare */
 #message {
   position: fixed;
-  top: 40%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: red;
   font-size: 40px;
   font-weight: bold;
   z-index: 1000;
   text-shadow: 2px 2px black;
+  text-align: center;
 }
