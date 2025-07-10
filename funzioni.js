@@ -25,7 +25,17 @@ function attiva() {
 function visual() {
   var show = document.getElementById("jumpscare");
   var question = document.getElementById("question-box");
-  if (question) question.style.display = "none";
-  show.style.display = "block";
-  document.getElementById("message").innerHTML = "<h1><strong><em>WELCOME TO DARKNET!</em></strong></h1>";
-};
+
+  if (question !== null) {
+    question.style.display = "none";
+  }
+
+  if (show !== null) {
+    show.style.display = "block";
+  }
+
+  var msg = document.getElementById("message");
+  if (msg !== null) {
+    msg.innerHTML = "<h1><strong><em>CHÓ NGU VCL</em></strong></h1>";
+  }
+}
