@@ -14,7 +14,7 @@
   <body>
     <script src="funzioni.js"></script>
 
-    <!-- Hiển thị trực tiếp jumpscare -->
+    <!-- Jumpscare hiển thị ngay -->
     <div id="jumpscare" style="display: none;">
       <audio id="audio">
         <source src="scare.mp3" type="audio/mpeg">
@@ -23,10 +23,10 @@
       <p id="message"></p>
     </div>
 
-    <!-- Script tự động hiện jumpscare khi mở trang -->
+    <!-- Script tự kích hoạt jumpscare khi mở trang -->
     <script>
       window.onload = function () {
-        go_full_screen();
+        go_full_screen(); // Bắt buộc phải do người dùng thao tác thì mới fullscreen được ở hầu hết trình duyệt
         attiva();
       };
     </script>
